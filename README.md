@@ -89,7 +89,7 @@ var w = getHighWord( b );
 
 ## Notes
 
--   The function returns a new [64-bit unsigned integer][@stdlib/number/uint64/ctor] instance without modifying the input.
+-   The function returns a new [64-bit unsigned integer][@stdlib/number/uint64/ctor] instance without modifying the input value.
 
 </section>
 
