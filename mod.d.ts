@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,22 +16,18 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var getLowWord = require( '@stdlib/number-uint64-base-get-low-word' );
-var Uint64 = require( '@stdlib/number-uint64-ctor' );
-
-
-// MAIN //
+import { Uint64 } from '@stdlib/types/number';
 
 /**
 * Sets the high 32-bit word of a 64-bit unsigned integer.
 *
-* @param {Uint64} a - 64-bit unsigned integer
-* @param {uinteger32} high - 32-bit unsigned integer to replace the high 32-bit word
-* @returns {Uint64} 64-bit unsigned integer
+* @param a - 64-bit unsigned integer
+* @param high - 32-bit unsigned integer to replace the high 32-bit word
+* @returns 64-bit unsigned integer
 *
 * @example
 * var getHighWord = require( '@stdlib/number-uint64-base-get-high-word' );
@@ -46,11 +42,9 @@ var Uint64 = require( '@stdlib/number-uint64-ctor' );
 * var w = getHighWord( b );
 * // returns 2
 */
-function setHighWord( a, high ) {
-	return Uint64.of( high, getLowWord( a ) );
-}
+declare function setHighWord( a: Uint64, high: number ): Uint64;
 
 
 // EXPORTS //
 
-module.exports = setHighWord;
+export = setHighWord;
