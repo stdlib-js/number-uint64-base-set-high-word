@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@stdlib/assert-is-uint64": "github:stdlib-js/assert-is-uint64#main",
-    "@stdlib/console-log-each-map": "^0.1.1",
+    "@stdlib/console-log-each-map": "^0.1.2",
     "@stdlib/constants-uint32-max": "^0.2.3",
     "@stdlib/number-uint64-base-get-high-word": "github:stdlib-js/number-uint64-base-get-high-word#main",
     "@stdlib/random-array-discrete-uniform": "^0.2.2",
